@@ -24,7 +24,6 @@ main{
     line-height: 2;
 }
 
-/*Make the h1 heading bigger with a bold font*/
 h1{
 	font-size: 2em; 
 	font-weight: bold;
@@ -32,7 +31,6 @@ h1{
 }
 
 
-/*Make the h2 heading match h1*/
 h2{
 	font-size: 1em; 
 	font-weight: bold;
@@ -53,7 +51,6 @@ h4{
     text-decoration: underline; 
 }
 
-/*Improve the spacing for paragraphs AND headings*/
 p, h1, h2 {
     padding: 10px;
     color:#FFFFFF;
@@ -71,13 +68,7 @@ footer{
 
 }
 
-/*Add borders around the main components and some
-space too
-header, nav, main, h1, footer{
-	border: 2px solid grey;
-	margin: 10px 0;
-}
-*/
+
 
 
 
@@ -101,7 +92,6 @@ nav ul{
 }
 
 
-/*Added this so the links stay the same color*/
 a:visited{color:#FFFFFF}
 
 
