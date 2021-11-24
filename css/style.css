@@ -87,14 +87,55 @@ nav ul{
   }
 
   .grid-container {
+    background-color: #5E503F;
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: repeat(9,auto);
+    row-gap: 15px;
   }
   .grid-item {
     padding: 20px;
     font-size: 30px;
+    max-width: 100%;
+    max-height: 100%;
     text-align: center;
+  }
+
+  .grid-item-1{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .grid-item-2{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }  
+  .grid-item-3{
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }  
+  .grid-item-4{
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+  }  
+  .grid-item-5{
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+  }  
+  .grid-item-6{
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+  }  
+  .grid-item-7{
+    grid-column: 1 / span 1;
+    grid-row: 8 / span 1;
+  }  
+  .grid-item-8{
+    grid-column: 1 / span 1;
+    grid-row: 9 / span 1;
+  }  
+  .grid-item-9{
+    grid-column: 1 / span 1;
+    grid-row: 10 / span 1;
   }
 
 
@@ -140,7 +181,18 @@ a:hover {
   
 @media only screen and (min-width: 768px){
 
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196F3;
+        padding: 10px;
+      }
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+
 }
-
-
-  
+}
