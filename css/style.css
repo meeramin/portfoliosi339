@@ -15,8 +15,7 @@ header {
     font-size: 20px;   
     padding: 0 100px;
     text-align: right;
-    color: #FFFFFF;
-    background-color: #000000;
+    color: #000000;
 
   }
 
@@ -154,7 +153,8 @@ a:active{
 .home a.home,
 .about a.about,
 .travel a.travel,
-.work a.work {
+.work a.work, 
+.contact a.contact{
 background-color: #5E503F;
 color: white;
 }
@@ -162,6 +162,7 @@ color: white;
 
 a:link {
     text-decoration: none;
+
   }
   
 a:visited {
@@ -173,15 +174,19 @@ a:hover {
     color: pink;
   }
   
+ 
+
+
+
+
 @media only screen and (min-width: 768px){
 
     .grid-container{
+
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    
-
     grid-template-areas:
         "grid-item-1 grid-item-2 grid-item-3"
         "grid-item-4 grid-item-5 grid-item-6"
@@ -189,6 +194,9 @@ a:hover {
     grid-gap: 0.2rem;
 
     }
+
+
+    
       .grid-item-1{
         grid-area: grid-item-1;
       }
@@ -227,6 +235,5 @@ a:hover {
         column-gap: 175px;
     }
 
-    
     
 }
