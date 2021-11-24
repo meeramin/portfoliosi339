@@ -88,6 +88,8 @@ nav ul{
 
   .grid-container{
       display:grid;
+      grid-template-columns: 1ft 1fr 1fr;
+
   }
 
   .grid-item-1{
@@ -187,13 +189,6 @@ a:hover {
     grid-gap: 0.2rem;
 
     }
-
-    grid-item{
-
-    }
-
-
-
       .grid-item-1{
         grid-area: grid-item-1;
       }
