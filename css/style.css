@@ -87,21 +87,25 @@ nav ul{
   }
 
   .grid-container {
-    background-color: #5E503F;
+    
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: repeat(9,auto);
-    row-gap: 15px;
-  }
-  .grid-item {
-    padding: 20px;
-    font-size: 30px;
-    max-width: 100%;
-    max-height: 100%;
-    text-align: center;
-  }
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
 
-  .grid-item-1{
+}
+
+.grid_item{
+    height: 400px;
+    width:400px;
+    max-width: 100%;
+    max-height:100%;
+    /*display: block;
+    object-fit: cover;*/
+
+}
+.grid-item-1{
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -163,7 +167,6 @@ nav ul{
     grid-row-start: 6;
     grid-row-end: 8;
 }
-
 
 
 .work{
