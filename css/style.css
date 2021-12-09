@@ -13,7 +13,7 @@ body{
 
 header {
     font-size: 20px;   
-    padding: 0 100px;
+    padding: 0px;
     text-align: right;
     color: #000000;
 
@@ -21,6 +21,7 @@ header {
 
 main{
     line-height: 2;
+ 
 }
 
 h1{
@@ -264,7 +265,15 @@ a:active{
     text-decoration: underline;
 }
 
+.favorites {
+  height:25%;
+  width: 25%;
+  padding-bottom: 120px;
+  display: block;
+      margin-left: auto;
+      margin-right: auto;
 
+}
 
 
 
@@ -358,6 +367,9 @@ a:hover {
 
     
     .flip-card {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       background-color: transparent;
       width: 250px;
       height: 250px;
@@ -392,13 +404,14 @@ a:hover {
     }
     
     .flip-card-back {
-      background-color: #2980b9;
-      color: white;
+      background-color: #5E503F;
+      color: #000000;
       transform: rotateY(180deg);
     }
 
     .flip-card.p{
 font-size: 10px;
+color: black;
     }
 
     input[type=text], select, textarea {
