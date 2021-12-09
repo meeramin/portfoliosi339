@@ -88,7 +88,7 @@ a.skip:focus{
 
 
 .mylife{
-  /* display: block; */
+  display: block;
   margin-left: auto;
   margin-right: auto;
 
@@ -278,7 +278,7 @@ a:active{
   height:25%;
   width: 25%;
   padding-bottom: 120px;
-  /* display: block; */
+  display: block;
       margin-left: auto;
       margin-right: auto;
 
