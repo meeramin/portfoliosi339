@@ -70,7 +70,6 @@ footer{
 }
 
 a.skip{
-  background: white;
   left: 0;
   padding: 6px;
   position: absolute;
@@ -82,7 +81,6 @@ a.skip{
 
 a.skip:focus{
   top:20px;
-  color: black;
   text-decoration-style: solid;
 }
 
@@ -177,9 +175,7 @@ animation-duration: 1s;  */
 
 .nav_links{
   display: flex;   
-  justify-content: space-around;
   flex-direction: column;
-  column-gap: 175px;
 }
 
 
