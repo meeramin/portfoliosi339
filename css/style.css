@@ -178,7 +178,7 @@ animation-duration: 1s;  */
 .nav_links{
   display: flex;   
   justify-content: space-around;
-  flex-direction: row;
+  flex-direction: column;
   column-gap: 175px;
 }
 
