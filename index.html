@@ -20,42 +20,60 @@
    <title>Home</title>
   </head>
 
-  <body class="home">
-	<a class = "skip" href="#skip">Skip to Main Content</a>
+  <body onload="myFunction()" style="margin:0;" class="home">
+	<div id="loader" class="bar">
+		<div class="circle"></div>
+		<!-- <p>Loading</p> -->
+	</div>
+	<div id="website">
 
+		<a class = "skip" href="#skip">Skip to Main Content</a>
 	
-	<header>
-		<nav>
-			<ul>
-				<li><a class="home" href = "index.html">HOME</a></li>
-				<li><a class="about" href = "about.html">ABOUT</a></li>
-				<li><a class="travel" href = "travel.html">TRAVELS</a></li>
-				<li><a class="work" href = "work.html">WORK</a></li>
-				<li><a class="contact" href = "contact.html">CONTACT</a></li>
+		<header>
+			<nav>
+				<ul>
+					<li><a class="home" href = "index.html">HOME</a></li>
+					<li><a class="about" href = "about.html">ABOUT</a></li>
+					<li><a class="travel" href = "travel.html">TRAVELS</a></li>
+					<li><a class="work" href = "work.html">WORK</a></li>
+					<li><a class="contact" href = "contact.html">CONTACT</a></li>
+	
+					
+				</ul>
+			</nav>
+			<h1>MEERA AMIN</h1>
 
-				
-			</ul>
-		</nav>
+		</header>
+	
+	
+	
+		<main class="skip" id="skip">
+	
+			<p>Hi, my name is Meera Amin and I am a junior studying at the University of Michigan. I am a part of the BSI program at the School of Information, with a minor in the Ross school of Business.</p>
+			<p>Here is a picture of me, my family, and my best friends. Some things that I enjoy are hanging out with my friends, watching movies, painting, and exercising. In my free time I like to paint things for room decor.</p>
+			<img src = "images/mylife.jpeg" class = "about" alt="my life"/>       
+				  
+		</main>
+		<footer>
+			<p>Meera Amin &copy; 2021</p>
+			<p>meeramin@umich.edu | <a href="https://www.linkedin.com/in/meera-amin-920830187/">LinkedIn</a> </p>
+	
+		</footer>
 
+	</div>
 
-	</header>
-
-	<h1>MEERA AMIN</h1>
-
-
-	<main class="skip" id="skip">
-
-		<p>Hi, my name is Meera Amin and I am a junior studying at the University of Michigan. I am a part of the BSI program at the School of Information, with a minor in the Ross school of Business.</p>
-		<p>Here is a picture of me, my family, and my best friends.</p>
-		<img src = "images/mylife.jpeg" class = "about" alt="my life"/>       
-              
-    </main>
-    <footer>
-		<p>Meera Amin &copy; 2021</p>
-		<p>meeramin@umich.edu | <a href="https://www.linkedin.com/in/meera-amin-920830187/">LinkedIn</a> </p>
-
-	</footer>
-
+	<script>
+		var myVar;
+		
+		function myFunction() {
+		  myVar = setTimeout(showPage, 3000);
+		}
+		
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("website").style.display = "block";
+		}
+	</script>
 	
 </body>
 </html>
