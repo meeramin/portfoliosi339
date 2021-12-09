@@ -20,7 +20,12 @@
    <title>About me</title>
   </head>
 
-  <body class = "about">
+  <body onload="myFunction()" style="margin:0;" class = "about">
+    <div id="loader" class="bar">
+      <div class="circle"></div>
+      <!-- <p>Loading</p> -->
+    </div>
+    <div id="website">
     <a class = "skip" href="#skip">Skip to Main Content</a>
 
 	
@@ -53,8 +58,8 @@
             My all time favorite shows are Gilmore Girls, One tree hill, Grey's Anatomy, New Girl, and some of my new favorites include Bridgerton, and Emily in Paris. 
             I'd say that I prefer shows that are more girl-oriented, or involve high school or college drama. Suspenseful or sci fi shows are not my thing.
         </p>
-        <img src = "images/greys.jpeg"  alt="greys"/>       
-        <img src = "images/gilmoregirls.jpeg"  alt="gilmore girls"/>
+        <img src = "images/greys.jpeg"  class="favorites" alt="greys"/>       
+        <img src = "images/gilmoregirls.jpeg"  class="favorites" alt="gilmore girls"/>
 
 
         <h3>Favorite Food</h3>
@@ -67,8 +72,8 @@
       
         <h4>Favorite Dinners</h4>
         <p>These are pictures of my favorite dinners. The quesadillas are from Isalita in Ann Arbor. The pasta is from La Pecora Bianca in NYC.</p>
-        <img src = "images/dinner1.jpeg"  alt="isalita"/>       
-        <img src = "images/dinner2.jpeg"  alt="la pecora bianca"/>
+        <img src = "images/dinner1.jpeg"  class="favorites" alt="isalita"/>       
+        <img src = "images/dinner2.jpeg"  class="favorites" alt="la pecora bianca"/>
 
 
 
@@ -78,6 +83,20 @@
 		<p>Meera Amin &copy; 2021</p>
     <p>meeramin@umich.edu | <a href="https://www.linkedin.com/in/meera-amin-920830187/">LinkedIn</a> </p>
 	</footer>
-	
+</div>
+
+
+  <script>
+		var myVar;
+		
+		function myFunction() {
+		  myVar = setTimeout(showPage, 3000);
+		}
+		
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("website").style.display = "block";
+		}
+	</script>
 </body>
 </html>

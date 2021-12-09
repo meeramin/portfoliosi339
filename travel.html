@@ -20,7 +20,12 @@
    <title>Travel</title>
   </head>
 
-  <body class="travel">
+  <body onload="myFunction()" style="margin:0;" class="travel">
+	<div id="loader" class="bar">
+		<div class="circle"></div>
+		<!-- <p>Loading</p> -->
+	</div>
+	<div id="website">
 	<a class = "skip" href="#skip">Skip to Main Content</a>
 
 
@@ -103,7 +108,19 @@
 		<p>meeramin@umich.edu | <a href="https://www.linkedin.com/in/meera-amin-920830187/">LinkedIn</a> </p>
 
 	</footer>
+</div>
 
-	
+	<script>
+		var myVar;
+		
+		function myFunction() {
+		  myVar = setTimeout(showPage, 3000);
+		}
+		
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("website").style.display = "block";
+		}
+	</script>
 </body>
 </html>
