@@ -78,14 +78,12 @@ a.skip{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  display: none;
 }
 
 a.skip:focus{
   top:20px;
   color: black;
   text-decoration-style: solid;
-  display:none;
 }
 
 
